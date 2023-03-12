@@ -146,7 +146,7 @@ background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, F
 /* ------------------------------------------------education----------------------------------------------------- */
 
 #education {
-    background-image: url('/edu-background.jpg');
+    background-image: url('edu-background.jpg');
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;   

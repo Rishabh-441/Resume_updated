@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Prompt&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+* {
+    text-decoration: none;
+}
+/* -----------------------------------------navbar------------------------------------------- */
+nav {
+    background: #007991;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #78ffd6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    z-index: 100;
+    position: sticky;
+    /* position: -webkit-sticky; */
+    top: 0;
+}
+nav h1 {
+    /* margin-left: 40px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Tilt Warp', cursive;
+    /* color: rgb(244, 244, 80); */
+}
+
+#links {
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* display: none; */
+}
+#links li {
+    padding: 10px 10px;
+    font-size: 19px;
+    list-style-type: none;
+    margin: 0 20px;
+    transition: 250ms;
+}
+
+#links li a {
+    color: white;
+}
+
+#links li:hover {
+    transform: scale(1.1);
+    background-color: #1e88e5;
+    border-radius: 8px;
+}
+
+#check {
+    display: none;
+}
+
+#menu {
+    font-size: 30px;
+    color: aliceblue;
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+/* -------------------------------------------home------------------------------------------------ */
+#home {
+    /* background-color: #1e88e5; */
+    background: #007991;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #78ffd6, #78ffd6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    /* margin-top: 50px; */
+    padding-top: 80px;
+    position: relative;
+    top: 0px;
+    padding-bottom: 65px;
+}
+.home-sec-1 {
+    font-size: 35px;
+    text-align: center;
+    padding: 0 20px;
+}
+#profile-photo {
+    padding: 40px;
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.home-sec-1 h4 {
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+}
+.home-sec-1 h1 {
+    font-family: 'Prompt', sans-serif;
+}
+.home-sec-1 h3 {
+    color: red;
+    font-family: monospace;
+}
+
+
+/* ---------------------------------skills------------------------------------------------ */
+
+#skills {
+    margin-top: 80px;
+}
+#skills h1 {
+    font-family: 'Prompt', sans-serif;
+}
+
+.loaders {
+    border: 2px solid black;
+    width: 40vw;
+    height: 40px;
+    border-radius: 10px;
+    margin: auto;
+}
+#skills-sec {
+    display: flex;
+    justify-content: center;
+}
+
+#skills h1 {
+    text-align: center;
+}
+
+.skill-box {
+    text-align: center;
+    margin: 30px 20px;
+    font-family: monospace;
+    font-size: 20px;
+}
+/* ------------------------------------------------education----------------------------------------------------- */
+
+#education {
+    background-image: url('/edu-background.jpg');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;   
+    text-align: center;
+}
+
+#education h1 {
+    padding-top: 50px;
+}
+
+#education-sec {
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#tline-sec {
+    position: relative;
+    margin: 0 auto;
+}
+
+.tline {
+    margin: 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+}
+
+.tag {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    transform: scale(2);
+}
+
+.edu-content {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(119, 0, 0);
+    padding: 30px;
+    text-align: left;
+}
+
+#edu-img-sec img{
+    
+    width: 600px;
+    padding-right: 200px;
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  /* transform: scale(-1.5); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------mediaScreen------------------------------------------ */
+
+@media only screen and (max-width:960px) {
+    nav ul {
+        text-align: center;
+    }
+    #links {
+        text-align: center;
+        color: blue;
+        width: fit-content;
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: none;
+        margin: 70px auto;
+        padding: 60px 80px;
+        background-color: #1565c0;
+        border-radius: 8px;
+    }
+    #links li {
+        margin-bottom: 30px;
+    }
+    #links li a{
+        /* display: none; */
+        color: white;
+    }
+    #menu {
+        display: flex;
+    }
+
+    #home {
+        display: block;
+        margin-top: -10px;
+        /* padding-top: 0; */
+        padding: 5px;
+    }
+    .home-sec-2 {
+        text-align: center;
+    }
+    #profile-photo {
+        width: 60vw;
+    }
+    .home-sec-1 h4 {
+        font-size: 30px;
+    }
+    .home-sec-1 h1 {
+        font-size: 30px;
+    }
+    .home-sec-1 h3 {
+        font-size: 20px;
+    }
+
+    #skills-sec {
+        display: block;
+    }
+
+    
+    #edu-img-sec img{
+        display: none;
+    }
+}
